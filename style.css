@@ -1,6 +1,7 @@
 * {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
 body {
@@ -395,7 +396,7 @@ summary {
 .postContainer p {
     font-size: 15px;
     line-height: 1.8; 
-    margin-bottom: 10px; /* Space below paragraphs */
+    margin-bottom: 10px; 
 }
 
 .navbar {
@@ -430,7 +431,7 @@ summary {
 }
 
 .menu ul li a:hover {
-    color: #B8C0FF; /* Hover color */
+    color: #B8C0FF; 
 }
 
 #page-container {
