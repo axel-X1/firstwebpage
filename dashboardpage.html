@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/sidebar.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #e48f36; text-shadow: #FFFF00 1px 0 10px; font-size: 45px;">Dashboard</h1>
+        <nav class="navbar">
+            <ul class="navbar">
+                <a href="index.html">Home</a>
+                <a href="profilepage.html">Profile</a>
+                <a href="dashboardpage.html">Dashboard</a>
+                <a href="blogpage.html">Blog</a>
+                <a href="FAQpage.html">FAQ</a>
+                <a onclick="showSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#303038"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>    
+
+                <div class="sidebar">
+                    <ul>
+                      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>  
+                      <li><a href="https://github.com/HZ-HBO-ICT" target="_blank">Git HZ</a></li>
+                      <li><a href="https://apps.hz.nl/WebApplicatieControlsUrls/DefaultEN.aspx?menu=095125102205077190037243248178061089216172153169&id=154111103216059077225002040239125195202075083207" target="_blank">Progress</a></li>
+                      <li><a href="https://learn.hz.nl/my/" target="_blank">Learn</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+
+            <tr>
+                <th>Quarter</th>
+                <th>Courses</th>
+                <th>Ecs</th>
+                <th>Exam</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td rowspan="3">1</td>
+                <td>Programme and Career Orientation</td>
+                <td>2.5</td>
+                <td>Interview</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Computer Science Basics</td>
+                <td>5</td>
+                <td>Written exam</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Programming Basics</td>
+                <td>5</td>
+                <td>Cases study exam</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">2</td>
+                <td>Object-Oriented Programming</td>
+                <td>10</td>
+                <td>2 Tests</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Framework project 1</td>
+                <td>10</td>
+                <td>Consists of 4 Tests</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Framework project 2</td>
+                <td>10</td>
+                <td>3 Tests</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">3</td>
+                <td>Business IT Consultancy basics</td>
+                <td>2.5</td>
+                <td>Practical skill</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>Personal Professional Development Exploration</td>
+                <td>12.5</td>
+                <td>Criterium focused interview</td>
+                <td><input class="grade-input" type="number" max="10" min="0">
+                </td>
+            </tr>
+
+
+        </table>
+    
+        <h2 style="color: #e48f36; text-shadow: #FFFF00 1px 0 10px; font-size: 45px;">Overall EC's Progress</h2>
+        <progress id="gradeProgressBar" value="2" max="100"></progress>
+    </main>
+
+
+
+    <footer style="color: #c56ca0;">
+        <p>&copy; Aleksandar Metodiev's website. In the process we trust 2024.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2em;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+td input[type="number"] {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+td progress {
+    width: 100%;
+    height: 20px;
+}
+
+td[data-progress] {
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    color: white;
+}
+
+table td:first-child, table td:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+body{
+font-family: Arial, sans-serif;
+    background-image: url('https://asset.gecdesigns.com/img/wallpapers/starry-night-sky-reflection-background-hd-wallpaper-sr10012425-1705222416280-cover.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: #333;
+}

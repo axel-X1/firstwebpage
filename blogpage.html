@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogpage</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="js/sidebar.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 style="color: #e48f36; text-shadow: #FFFF00 1px 0 10px; font-size: 45px;">Blog</h1>
+        <nav class="navbar">
+            <ul class="navbar">
+                <a href="index.html">Home</a>
+                <a href="profilepage.html">Profile</a>
+                <a href="dashboardpage.html">Dashboard</a>
+                <a href="blogpage.html">Blog</a>
+                <a href="FAQpage.html">FAQ</a>
+                <a onclick="showSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#303038"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>    
+
+                <div class="sidebar">
+                    <ul>
+                      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>  
+                      <li><a href="https://github.com/HZ-HBO-ICT" target="_blank">Git HZ</a></li>
+                      <li><a href="https://apps.hz.nl/WebApplicatieControlsUrls/DefaultEN.aspx?menu=095125102205077190037243248178061089216172153169&id=154111103216059077225002040239125195202075083207" target="_blank">Progress</a></li>
+                      <li><a href="https://learn.hz.nl/my/" target="_blank">Learn</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="logo-container">
+            <img src="photosOproject/hzlogo2.png"  alt="HZLogo" class="logo" class="logo-container">
+        </div>
+        <div class="container">
+            <div class="left-section">
+                <h2>Blog posts</h2>
+                <p>SWOT-ting My Brain</p>
+                <div class="blog-feed">
+
+                    <div class="blog-post">
+                        <p>Starting out with programming can be challenging yet rewarding. Here's how I tackled my first
+                            program and the lessons I learned from it...</p>
+                        <a href="posts/post1.html" class="read-more">Read more...</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-section">
+                <h2>Career Orientation: Choosing the Right Path</h2>
+                <p>Personal motivation</p>
+
+                <div class="blog-post">
+
+                    <p>Navigating through career choices can be overwhelming. Here’s my journey and tips on how to
+                        decide which career path to take...</p>
+                    <a href="posts/post2.html" class="read-more">Read more...</a>
+                </div>
+                <div class="blog-post">
+                    <p>ICT-field of work<br>92% of IT jobs will be transformed by AI</p>
+                    <a href="https://www.cio.com/article/3485322/92-of-it-jobs-will-be-transformed-by-ai.html"
+                        target="_blank" class="read-more">Read more...</a>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer style="color: #c56ca0;">
+        <p>&copy; Aleksandar Metodiev's website. In the process we trust 2024.</p>
+    </footer>
+</body>
+</html>

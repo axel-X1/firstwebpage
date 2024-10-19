@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-image: url("https://asset.gecdesigns.com/img/wallpapers/starry-night-sky-reflection-background-hd-wallpaper-sr10012425-1705222416280-cover.webp");
+}
+
+header {
+    background: #4b0082;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color:#e48f36;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul {
+    color: black;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.active {
+    background-color: greenyellow;
+}
+
+.navbar ul a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+}
+
+nav ul a:hover {
+    color: #ffce00;
+}
+
+.navbar li:first-child{
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #4b0082;
+    color: white;
+    text-align: center;
+  }
+
+.sidebar {
+ position:fixed;
+ top: 0;
+ right: 0;
+ height: 100vh;
+ width: 250px;
+ z-index: 999;
+ background-color: rgba(255, 255, 255, 0.437);
+ backdrop-filter: blur(10px);
+ box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+ list-style: none;
+ display: none;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+}
+
+.sidebar li {
+width: 100%;
+}
+
+nav {
+    background-color: #bbd0ff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    width: 100%;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+}
